@@ -633,6 +633,7 @@ footer p {
 
   .mentorship-text-wrapper {
     display: block;
+    margin: 0;
   }
 
   .ticked-text {
