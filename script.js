@@ -20,10 +20,9 @@ programsContainer?.addEventListener("click", function (e) {
   if (!clicked) return;
 
   // Show more text
-  const btns = document.querySelectorAll(`.program-${clicked.dataset.btn}`);
-  btns.forEach(function (btn) {
-    btn.classList.toggle("show");
-  });
+  document
+    .querySelector(`.program-${clicked.dataset.btn}`)
+    .classList.toggle("show");
 
   // Changing btn text to read more or read less
   if (clicked.innerText === "Pročitaj više") {

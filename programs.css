@@ -10,7 +10,6 @@
 :root {
   --light-black: #100f0f;
   --golden-color: #dfc24b;
-  --light-silver: #e6dedd;
 }
 
 .container {
@@ -30,6 +29,7 @@ nav {
   color: #fff;
   position: fixed;
   z-index: 100;
+  /* margin-top: -100px */
   top: 0;
 }
 
@@ -140,14 +140,9 @@ nav {
   margin-bottom: 60px;
 }
 
-p {
-  color: var(--light-silver);
-}
-
 .program h4 {
   font-size: 30px;
   margin-bottom: 30px;
-  color: var(--light-silver);
 }
 
 .second-text {
@@ -189,7 +184,7 @@ p {
   font-size: 20px;
 }
 
-.personal-training {
+#personal-training {
   display: inline-block;
   font-weight: 900;
   font-size: 20px;
@@ -197,14 +192,14 @@ p {
 }
 
 .first-text a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: var(--golden-color);
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
   text-decoration-thickness: 2px;
   color: var(--golden-color);
-  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .read-more-btn {
@@ -221,7 +216,7 @@ p {
 }
 
 .read-more-btn:hover {
-  background-color: var(--light-black);
+  background-color: var(--light-silver);
   color: var(--golden-color);
 }
 

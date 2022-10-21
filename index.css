@@ -106,7 +106,7 @@ nav {
 .entry-content img {
   opacity: 0.6;
   width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
 }
 
 .entry-content-text h1 {
@@ -334,6 +334,8 @@ nav {
 
 .mentorship-section {
   margin-top: 100px;
+  /*   display: flex;
+  justify-content: center; */
 }
 
 .mentorship-section h2 {
@@ -341,9 +343,17 @@ nav {
   color: var(--light-silver);
 }
 
+.mentorship-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 .mentorship-text {
+  /* display: flex; */
   padding-bottom: 100px;
-  padding: 0 20px 100px 20px;
+  padding: 0 40px 80px 40px;
+  justify-content: space-around;
 }
 
 .mentorship-text h2 {
@@ -354,15 +364,40 @@ nav {
   margin-left: 20px;
 }
 
+.mentorship-title h2 {
+  margin: 0;
+}
+
+.mentorship-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 i {
   color: var(--golden-color);
   font-size: 35px;
 }
 
 .ticked-text {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   margin-bottom: 20px;
+}
+
+.ticked-text-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.ticked-text h4 {
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 26px;
+  align-self: center;
+}
+
+.ticked-text p {
+  display: none;
 }
 
 footer {
@@ -591,6 +626,22 @@ footer p {
 
   .clients-img::after {
     content: none;
+  }
+
+  .mentorship-text {
+    padding: 0 20px 80px 20px;
+  }
+
+  .mentorship-text-wrapper {
+    display: block;
+  }
+
+  .ticked-text {
+    margin: 0;
+  }
+
+  .ticked-text-container {
+    margin-bottom: 0;
   }
 }
 
