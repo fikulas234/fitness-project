@@ -125,7 +125,6 @@ nav {
 }
 
 .programs-main-image img {
-  /* opacity: 0.5; */
   width: 100%;
   max-height: 100vh;
 }
@@ -140,9 +139,14 @@ nav {
   margin-bottom: 60px;
 }
 
+p {
+  color: var(--light-silver);
+}
+
 .program h4 {
   font-size: 30px;
   margin-bottom: 30px;
+  color: var(--light-silver);
 }
 
 .second-text {
@@ -184,7 +188,7 @@ nav {
   font-size: 20px;
 }
 
-#personal-training {
+.personal-training {
   display: inline-block;
   font-weight: 900;
   font-size: 20px;
@@ -192,14 +196,14 @@ nav {
 }
 
 .first-text a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: var(--golden-color);
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 6px;
   text-decoration-thickness: 2px;
   color: var(--golden-color);
-  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .read-more-btn {
