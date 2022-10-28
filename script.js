@@ -14,7 +14,7 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-btnBackTop.addEventListener("click", () =>
+btnBackTop?.addEventListener("click", () =>
   window.scrollTo({
     top: 0,
     behavior: "smooth",
