@@ -6,12 +6,20 @@ const clicked = document.querySelectorAll(".read-more-btn");
 const firstText = document.querySelectorAll(".first-text");
 const secondText = document.querySelectorAll(".second-text");
 const programsContainer = document.querySelector(".programs-page");
+const btnBackTop = document.querySelector(".btn-back-to-top");
 
 // event listeners
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
+btnBackTop.addEventListener("click", () =>
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  })
+);
 
 // functions
 
@@ -39,6 +47,21 @@ navLinks.forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 1000 ||
+    document.documentElement.scrollTop > 1000
+  ) {
+    btnBackTop.style.display = "block";
+  } else {
+    btnBackTop.style.display = "none";
+  }
+}
 
 new Swiper(".swiper", {
   // slidesPerView: 3,

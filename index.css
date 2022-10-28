@@ -13,6 +13,10 @@
   --light-silver: #e6dedd;
 }
 
+body {
+  background-color: var(--light-black);
+}
+
 .container {
   background-color: var(--light-black);
   color: var(--light-silver);
@@ -142,7 +146,7 @@ nav {
 }
 
 .entry-below-text {
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 0 36px;
 }
 
@@ -172,12 +176,12 @@ nav {
 }
 
 .first-section {
-  padding: 0 60px 100px 60px;
+  padding: 0 20px 100px 20px;
   max-height: 600px;
 }
 
 .second-section {
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
 .first-section,
@@ -288,12 +292,11 @@ nav {
 }
 
 .see-more-btn:hover {
-  background-color: var(--light-silver);
+  background-color: var(--light-black);
   color: var(--golden-color);
 }
 
 .clients-experience-section {
-  margin-top: 60px;
   max-width: 1400px;
   position: relative;
 }
@@ -330,6 +333,12 @@ nav {
   transform: translateY(-50%);
   right: 0%;
   display: block;
+}
+
+.left-arrow i,
+.right-arrow i {
+  font-size: 36px;
+  color: var(--golden-color);
 }
 
 .mentorship-section {
@@ -373,9 +382,10 @@ nav {
   gap: 20px;
 }
 
-i {
-  color: var(--golden-color);
-  font-size: 35px;
+.muscle-icon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
 }
 
 .ticked-text {
@@ -386,13 +396,14 @@ i {
 
 .ticked-text-container {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-left: 10px;
 }
 
-.ticked-text h4 {
+.ticked-text h3 {
   margin-left: 20px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   align-self: center;
 }
 
@@ -404,6 +415,7 @@ footer {
   background-color: var(--golden-color);
   color: #000;
   text-align: center;
+  margin-top: 80px;
 }
 
 footer p {
@@ -479,6 +491,23 @@ footer p {
   right: 1%;
 }
 
+.btn-back-to-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--light-black);
+  background-color: var(--golden-color);
+  z-index: 100;
+  display: none;
+}
+
+.btn-back-to-top i {
+  font-size: 18px;
+}
+
 /* @media only screen and (max-width: 1200px) {
 }
 
@@ -537,6 +566,10 @@ footer p {
     right: 0;
   }
 
+  .entry-content-text p {
+    display: none;
+  }
+
   .section-programs {
     margin-bottom: 0;
     padding: 0;
@@ -554,7 +587,7 @@ footer p {
   .card {
     width: 540px;
     max-height: 800px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 80px auto;
   }
 
   .card:first-child {
@@ -631,8 +664,8 @@ footer p {
     padding: 0 20px 80px 20px;
   }
 
-  .ticked-text h4 {
-    font-size: 18px;
+  .ticked-text h3 {
+    font-size: 24px;
   }
 
   .mentorship-text-wrapper {
@@ -645,7 +678,7 @@ footer p {
   }
 
   .ticked-text-container {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -656,7 +689,7 @@ footer p {
 
   .card {
     max-width: 380px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 80px auto;
   }
 
   .card img {
@@ -671,7 +704,7 @@ footer p {
 @media only screen and (max-width: 400px) {
   .card {
     max-width: 340px;
-    margin: 120px auto 60px auto;
+    margin: 80px auto 60px auto;
   }
 
   .card img {
