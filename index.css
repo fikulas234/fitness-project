@@ -31,7 +31,6 @@ nav {
   height: 100px;
   width: 100%;
   background-color: var(--light-black);
-  color: var(--light-silver);
   position: fixed;
   z-index: 100;
   /* margin-top: -100px */
@@ -435,6 +434,15 @@ footer p {
   margin: 20px;
 }
 
+.website-author {
+  font-size: 14px;
+}
+
+.website-author a {
+  text-decoration: underline;
+  color: #000;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -491,16 +499,57 @@ footer p {
   right: 1%;
 }
 
+.contact-me {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.contact-me p {
+  color: var(--light-silver);
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-me a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--light-black);
+  background-color: var(--golden-color);
+  padding: 4px 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-me a:hover {
+  color: var(--golden-color);
+  background-color: var(--light-black);
+  border: 1px solid var(--golden-color);
+}
+
+.contact-me img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 .btn-back-to-top {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
   border: 2px solid var(--light-black);
   background-color: var(--golden-color);
   z-index: 100;
+  cursor: pointer;
   display: none;
 }
 
@@ -679,6 +728,11 @@ footer p {
 
   .ticked-text-container {
     margin-bottom: 30px;
+  }
+
+  .contact-me {
+    flex-direction: column-reverse;
+    gap: 30px;
   }
 }
 
