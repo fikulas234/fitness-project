@@ -4,7 +4,6 @@ const navLinks = document.querySelectorAll(".nav-link");
 const programs = document.querySelector(".programs");
 const clicked = document.querySelectorAll(".read-more-btn");
 const firstText = document.querySelectorAll(".first-text");
-const secondText = document.querySelectorAll(".second-text");
 const programsContainer = document.querySelector(".programs-page");
 const btnBackTop = document.querySelector(".btn-back-to-top");
 
@@ -22,7 +21,6 @@ btnBackTop?.addEventListener("click", () =>
 );
 
 // functions
-
 programsContainer?.addEventListener("click", function (e) {
   const clicked = e.target.closest(".read-more-btn");
   if (!clicked) return;
@@ -41,6 +39,7 @@ programsContainer?.addEventListener("click", function (e) {
   }
 });
 
+// when clicked nav link menu bar disapear
 navLinks.forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
